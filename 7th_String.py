@@ -34,3 +34,29 @@ print(name)
 
 name = "Khushnood"
 print("Slicing name 'Khushnood' :->",name[0:5])    #Output ---> Slicing name 'Khushnood' :-> Khush  n won't be included
+#Extra concepts:-> 1). name[0:] --> if i miss to add ending index then python will automatically understand that i -->
+                                     #--> want to go to the last word so Output will be:-> Khushnood
+                # 2). name[0:len(str)]  --> it also mean that i want to go to the last word. output --> Khushnood
+                # 3). name[:5] --> if we miss the first index then python will automatically start from zero. output--> Khush
+
+#Negative indexing:-> In negitive slicing we can cout from backword, which start from -1.
+#Example:
+print("Negative Slicing:-> ",name[-9:-4]) #output ---> Khush
+#--------------------------------------------------------------------------------------------
+
+#String Functions:
+#Example:
+string = "hi I am Khushnood Ali Khan"
+
+print(string.endswith("an"))   #with this function i want to check if my string ends with 'an' if it does then it will --->
+                               #---> return True or else it will return False. Output --> True
+
+print(string.capitalize())   #This function will Capitalize the first word of the string. Output--> Hi I am Khushnood Ali Khan
+                             #It won't change the value, only a copy of it will be changed. example if i access the string -->
+                             #elsewhere it will be the same is original 'hi I am khushnood Ali Khan'.
+
+print(string.replace("u","o")) #use the to replace character or word in a string.
+
+print("am is first occur on index:->",string.find("am"))    #returns the first index of first occurrer. Output --> 5
+
+print("a occur in a string:->",string.count("a"))   #Use to count or check the number of occurrences.
