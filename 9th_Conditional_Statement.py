@@ -33,3 +33,24 @@ elif (num == 0):
 
 else:
     print("The Number is Negative.")
+#-------------------------------------------------------------------------------------------
+
+#Nested Conditional Statement: use to check a certain condition in condition.
+"""
+Syntex:
+if (condition):
+    if (condition):
+        statement 1
+    elif (condition):
+        statement 2
+    else:
+        statement N
+
+elif (condition):
+    if (condition):
+        statement 1
+    elif (condition):
+        statement 2
+    else:
+        statement N
+"""
