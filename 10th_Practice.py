@@ -38,7 +38,7 @@ else:
 
 #4). WAP to find if the number is multiple of 7 or not.
 num4 = int(input("Enter a Number: "))
-if (num4 / 7 == 1):
+if (num4 % 7 == 0):
     print(num4,"is multiple of 7.")
 else:
     print(num4,"is not multiple of 7.")
