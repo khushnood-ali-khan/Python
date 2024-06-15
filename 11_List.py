@@ -4,7 +4,7 @@
 #Example:
 marks = ["1st Semester Marks",72,64,85,84,81,88]
 
-print("Marks Lists:",marks)             #Output ---> Marks Lists: [72,64,85,84,81,88]
+print("\nMarks Lists:",marks)             #Output ---> Marks Lists: [72,64,85,84,81,88]
 print("Marks Datatype:",type(marks))    #Output ---> Marks Datatype: <class 'list'>
 print("Length of List:",len(marks))     #Output ---> Length of List: 7
 
@@ -20,7 +20,7 @@ print("Value 1 is Now:",marks[0])       #Output ---> Value 1 is Now: Khushnood
 #List Slicing:  Syntex:-> list_name[starting_index : ending_index]
 
 paper_marks = [88,85,84,81,72,64]
-print("Slicing:",paper_marks[0:4])  #Output --> Slicing: [88, 85, 84, 81]    #ending index won't be included.
+print("\nSlicing:",paper_marks[0:4])  #Output --> Slicing: [88, 85, 84, 81]    #ending index won't be included.
 """
 #Extra Consepts: 
 1). paper_marks[ :4]    #python auto understance to start from zero.    #Ouput --> [88, 85, 84, 81]
@@ -29,3 +29,29 @@ print("Slicing:",paper_marks[0:4])  #Output --> Slicing: [88, 85, 84, 81]    #en
 # 4). Negative index: 
 paper_marks[-6:0]  #you can also count from back side in negative numbers. #Ouput -->  [88,85,84,81,72,64]
 """
+#------------------------------------------------------------------------------------------
+
+#List Method: Different Functions that can be only use for lists. #Example:
+
+list = [2, 1, 3]
+
+list.append(4)  #Add the element to the end of list. 
+print("\nAdd 4 to list:",list)     #Output ----> [2, 1, 3, 4]
+
+list.sort()     #sort the list elements in ascending order. 
+print("Sorted in Ascending order:",list)     #Output ----> [1, 2, 3, 4]
+
+list.sort(reverse=True)     #sort the list elements in Decending order.
+print("Sorted in Decending order:",list)                 #Output ----> [4, 3, 2, 1]
+
+list.reverse()      #reverse the list elements.
+print("Reverse the elements:",list)         #Output ----> [1, 2, 3, 4]
+
+list.insert(2,2.5)  #insert element on specific index.
+print("Insert 2.5 on 2 index:",list)         #Output ---> [1, 2, 2.5, 3, 4]
+
+list.remove(2.5)    #remove the first occurence of the element.
+print("Remove the first occur of 2.5:",list)         #Output ---> [1, 2, 3, 4]  #it remove the first occurence of 2.5.
+
+list.pop(3)         #remove the element from specific index.
+print("Remove the 3 index(4):",list)         #output ---> [1, 2, 3]
